@@ -1,0 +1,3 @@
+Bundle-Name: Topic Management Impl
+Bundle-SymbolicName: com.ncema.topic.impl
+Bundle-Version: 1.0.0

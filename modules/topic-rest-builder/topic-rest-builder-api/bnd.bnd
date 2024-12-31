@@ -1,0 +1,6 @@
+Bundle-Name: topic-rest-builder-api
+Bundle-SymbolicName: com.ncema.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	com.ncema.dto.v1_0,\
+	com.ncema.resource.v1_0

@@ -1,0 +1,1182 @@
+{
+	"configuration": {
+		"className": "com.liferay.object.admin.rest.dto.v1_0.ObjectDefinition",
+		"parameters": {
+			"containsHeaders": "true",
+			"createStrategy": "UPSERT",
+			"importStrategy": "ON_ERROR_FAIL",
+			"updateStrategy": "UPDATE"
+		},
+		"taskItemDelegateName": "DEFAULT"
+	},
+	"items": [
+		{
+			"enableComments": false,
+			"objectRelationships": [],
+			"objectFolderExternalReferenceCode": "default",
+			"enableCategorization": true,
+			"accountEntryRestrictedObjectFieldName": "",
+			"objectActions": [],
+			"enableLocalization": false,
+			"accountEntryRestricted": false,
+			"externalReferenceCode": "attachment-object",
+			"objectFields": [
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Author"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "9beea257-7d04-83f3-4552-28f8f38da1dd",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "creator",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Create Date"
+					},
+					"type": "Date",
+					"required": false,
+					"externalReferenceCode": "cbdd4c27-2d55-798c-4030-c0dd435f7276",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "createDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "External Reference Code"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "73ee4ad3-b508-c724-7ee8-c5ea21c6eee3",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "externalReferenceCode",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Long",
+					"label": {
+						"en_US": "ID"
+					},
+					"type": "Long",
+					"required": false,
+					"externalReferenceCode": "bcd55a3d-5700-b259-810b-09f325afa02b",
+					"indexedAsKeyword": true,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "id",
+					"state": false,
+					"businessType": "LongInteger",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Modified Date"
+					},
+					"type": "Date",
+					"required": false,
+					"externalReferenceCode": "a30db06c-b700-ba01-3201-6cf8dc1932a9",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "modifiedDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Status"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "f2043c9c-5faa-5b07-7393-a13f8d72c9e3",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "status",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "Long",
+					"label": {
+						"en_US": "Topic Id"
+					},
+					"type": "Long",
+					"required": false,
+					"externalReferenceCode": "945812fc-c5d6-7f0d-facc-16b535cd5348",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "topicId",
+					"state": false,
+					"businessType": "LongInteger",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "File Name"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "0d936179-ff76-178c-0d70-64ad0da512b2",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "fileName",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [
+						{
+							"name": "showCounter",
+							"value": false
+						}
+					],
+					"readOnly": "false",
+					"DBType": "Clob",
+					"label": {
+						"en_US": "File Base64"
+					},
+					"type": "Clob",
+					"required": false,
+					"externalReferenceCode": "7a203e5d-b2c8-7552-ccd0-88bdd3107002",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "fileBase64",
+					"state": false,
+					"businessType": "LongText",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "Mime Type"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "5ae86ded-cbf7-6166-9cc6-8ffa460fb08f",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "mimeType",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				}
+			],
+			"restContextPath": "/o/c/attachments",
+			"scope": "site",
+			"portlet": true,
+			"modifiable": true,
+			"parameterRequired": false,
+			"enableObjectEntryHistory": false,
+			"titleObjectFieldName": "id",
+			"objectValidationRules": [],
+			"active": true,
+			"defaultLanguageId": "en_US",
+			"enableIndexSearch": true,
+			"label": {
+				"en_US": "Attachment"
+			},
+			"panelCategoryKey": "site_administration.design",
+			"pluralLabel": {
+				"en_US": "Attachments"
+			},
+			"objectLayouts": [],
+			"system": false,
+			"objectViews": [],
+			"enableObjectEntryDraft": false,
+			"name": "Attachment",
+			"actions": {
+				"permissions": {},
+				"get": {},
+				"update": {},
+				"delete": {},
+				"exportObjectDefinition": {}
+			},
+			"status": {
+				"label_i18n": "Approved",
+				"code": 0,
+				"label": "approved"
+			}
+		},
+		{
+			"enableComments": false,
+			"objectRelationships": [
+				{
+					"objectDefinitionSystem2": false,
+					"parameterObjectFieldName": "",
+					"parameterObjectFieldId": 0,
+					"label": {
+						"en_US": "MeetingTopics"
+					},
+					"reverse": true,
+					"type": "manyToMany",
+					"externalReferenceCode": "5377f8c6-3c04-32dd-a679-842d8a4f8d78",
+					"objectDefinitionModifiable2": true,
+					"system": false,
+					"name": "meetingTopics",
+					"deletionType": "disassociate",
+					"objectDefinitionExternalReferenceCode1": "topics-object",
+					"objectDefinitionExternalReferenceCode2": "meeting-object",
+					"objectDefinitionName2": "Meeting"
+				}
+			],
+			"objectFolderExternalReferenceCode": "default",
+			"enableCategorization": true,
+			"accountEntryRestrictedObjectFieldName": "",
+			"objectActions": [
+				{
+					"conditionExpression": "",
+					"objectActionExecutorKey": "CustomObjectActionExecutor",
+					"errorMessage": {},
+					"active": true,
+					"description": "",
+					"label": {
+						"en_US": "Topic Action"
+					},
+					"externalReferenceCode": "9c79718e-a57b-2706-15cc-558c9dd5932f",
+					"system": false,
+					"objectActionTriggerKey": "onAfterAdd",
+					"name": "topicAction",
+					"parameters": {},
+					"status": {
+						"label_i18n": "Never Ran",
+						"code": 0,
+						"label": "never-ran"
+					}
+				}
+			],
+			"enableLocalization": false,
+			"accountEntryRestricted": false,
+			"externalReferenceCode": "topics-object",
+			"objectFields": [
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Author"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "871ce3b7-61c2-55a7-b0ae-6eeb7686adb7",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "creator",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Create Date"
+					},
+					"type": "Date",
+					"required": false,
+					"externalReferenceCode": "b21293d3-d6fb-9401-52d4-2a6559623191",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "createDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Long",
+					"label": {
+						"en_US": "ID"
+					},
+					"type": "Long",
+					"required": false,
+					"externalReferenceCode": "b1a070b8-398c-0fab-c9bc-19ce3b4643c5",
+					"indexedAsKeyword": true,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "id",
+					"state": false,
+					"businessType": "LongInteger",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "External Reference Code"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "63ed13c6-e7c1-386a-f885-db23bf75d774",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "externalReferenceCode",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Modified Date"
+					},
+					"type": "Date",
+					"required": false,
+					"externalReferenceCode": "0b8f0ea8-5bf0-8733-1d0d-7a78323d5887",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "modifiedDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Status"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "78e2de72-2580-f68c-003d-19e0bbd03bb7",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "status",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"listTypeDefinitionExternalReferenceCode": "topic-title",
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "Topic Title"
+					},
+					"type": "String",
+					"required": true,
+					"externalReferenceCode": "fb2d1723-627c-827b-f657-ce5f92d68ac2",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "topicTitle",
+					"state": false,
+					"businessType": "Picklist",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "Topic Sub-title"
+					},
+					"type": "String",
+					"required": true,
+					"externalReferenceCode": "cae5cd7b-d794-8088-7ffd-374f5eb3d3e3",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "topicSubtitle",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "Clob",
+					"label": {
+						"en_US": "Topic Description"
+					},
+					"type": "Clob",
+					"required": true,
+					"externalReferenceCode": "d8fbda32-fb51-a5fc-a56b-653a7fe394e9",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "topicDescription",
+					"state": false,
+					"businessType": "RichText",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"listTypeDefinitionExternalReferenceCode": "topic-status",
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "Topic Status"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "5e95cbc4-10d2-bf7f-3602-b46f9c39768b",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "topicStatus",
+					"state": false,
+					"businessType": "Picklist",
+					"readOnlyConditionExpression": ""
+				}
+			],
+			"restContextPath": "/o/c/topics",
+			"scope": "site",
+			"portlet": true,
+			"modifiable": true,
+			"parameterRequired": false,
+			"enableObjectEntryHistory": false,
+			"titleObjectFieldName": "id",
+			"objectValidationRules": [],
+			"active": true,
+			"defaultLanguageId": "en_US",
+			"enableIndexSearch": true,
+			"label": {
+				"en_US": "Topic"
+			},
+			"panelCategoryKey": "site_administration.design",
+			"pluralLabel": {
+				"en_US": "Topics"
+			},
+			"objectLayouts": [],
+			"system": false,
+			"objectViews": [],
+			"enableObjectEntryDraft": false,
+			"name": "Topic",
+			"actions": {
+				"permissions": {},
+				"get": {},
+				"update": {},
+				"delete": {},
+				"exportObjectDefinition": {}
+			},
+			"status": {
+				"label_i18n": "Approved",
+				"code": 0,
+				"label": "approved"
+			}
+		},
+		{
+			"enableComments": false,
+			"objectRelationships": [],
+			"objectFolderExternalReferenceCode": "default",
+			"enableCategorization": true,
+			"accountEntryRestrictedObjectFieldName": "",
+			"objectActions": [],
+			"enableLocalization": false,
+			"accountEntryRestricted": false,
+			"externalReferenceCode": "participants-object",
+			"objectFields": [
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Author"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "34dfce13-96e4-bb34-7801-5abe4804ba5c",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "creator",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Create Date"
+					},
+					"type": "Date",
+					"required": false,
+					"externalReferenceCode": "e2ee6aae-5c36-ba0d-5ec7-ff1108be4f8d",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "createDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "External Reference Code"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "59796204-8af4-5822-51d1-59558705c654",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "externalReferenceCode",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Long",
+					"label": {
+						"en_US": "ID"
+					},
+					"type": "Long",
+					"required": false,
+					"externalReferenceCode": "4be5342d-c193-2441-1003-aab5d392e4b7",
+					"indexedAsKeyword": true,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "id",
+					"state": false,
+					"businessType": "LongInteger",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Modified Date"
+					},
+					"type": "Date",
+					"required": false,
+					"externalReferenceCode": "3127e02d-2472-7b93-f637-861c0c60549b",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "modifiedDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Status"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "f65da366-4f4c-10a1-44ef-c8388adca95a",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "status",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "Long",
+					"label": {
+						"en_US": "Meeting ID"
+					},
+					"type": "Long",
+					"required": false,
+					"externalReferenceCode": "83533194-0102-4f2c-53fb-0a6b0d570248",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "meetingID",
+					"state": false,
+					"businessType": "LongInteger",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "Long",
+					"label": {
+						"en_US": "Participants ID"
+					},
+					"type": "Long",
+					"required": false,
+					"externalReferenceCode": "877b35b3-b1da-775f-fbcb-b1a94c2bd5ce",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "participantsID",
+					"state": false,
+					"businessType": "LongInteger",
+					"readOnlyConditionExpression": ""
+				}
+			],
+			"restContextPath": "/o/c/participantses",
+			"scope": "site",
+			"portlet": true,
+			"modifiable": true,
+			"parameterRequired": false,
+			"enableObjectEntryHistory": false,
+			"titleObjectFieldName": "id",
+			"objectValidationRules": [],
+			"active": true,
+			"defaultLanguageId": "en_US",
+			"enableIndexSearch": true,
+			"label": {
+				"en_US": "Participants"
+			},
+			"panelCategoryKey": "site_administration.design",
+			"pluralLabel": {
+				"en_US": "Participants"
+			},
+			"objectLayouts": [],
+			"system": false,
+			"objectViews": [],
+			"enableObjectEntryDraft": false,
+			"name": "Participants",
+			"actions": {
+				"permissions": {},
+				"get": {},
+				"update": {},
+				"delete": {},
+				"exportObjectDefinition": {}
+			},
+			"status": {
+				"label_i18n": "Approved",
+				"code": 0,
+				"label": "approved"
+			}
+		},
+		{
+			"enableComments": false,
+			"objectRelationships": [
+				{
+					"objectDefinitionSystem2": false,
+					"parameterObjectFieldName": "",
+					"parameterObjectFieldId": 0,
+					"label": {
+						"en_US": "MeetingTopics"
+					},
+					"reverse": false,
+					"type": "manyToMany",
+					"externalReferenceCode": "bf11a577-9aca-b17e-147e-0e675579d7aa",
+					"objectDefinitionModifiable2": true,
+					"system": false,
+					"name": "meetingTopics",
+					"deletionType": "disassociate",
+					"objectDefinitionExternalReferenceCode1": "meeting-object",
+					"objectDefinitionExternalReferenceCode2": "topics-object",
+					"objectDefinitionName2": "Topic"
+				}
+			],
+			"objectFolderExternalReferenceCode": "default",
+			"enableCategorization": true,
+			"accountEntryRestrictedObjectFieldName": "",
+			"objectActions": [],
+			"enableLocalization": false,
+			"accountEntryRestricted": false,
+			"externalReferenceCode": "meeting-object",
+			"objectFields": [
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Author"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "c38e0687-3b53-10c3-0296-b058c609e437",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "creator",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Create Date"
+					},
+					"type": "Date",
+					"required": false,
+					"externalReferenceCode": "20f05ccc-c673-8694-891b-fa4a6d4617df",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "createDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "External Reference Code"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "2835cf3a-918c-019d-854a-bfa226f58905",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "externalReferenceCode",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Long",
+					"label": {
+						"en_US": "ID"
+					},
+					"type": "Long",
+					"required": false,
+					"externalReferenceCode": "c43a6a02-d917-2062-4412-7df046d5f058",
+					"indexedAsKeyword": true,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "id",
+					"state": false,
+					"businessType": "LongInteger",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "Date",
+					"label": {
+						"en_US": "Modified Date"
+					},
+					"type": "Date",
+					"required": false,
+					"externalReferenceCode": "5a82d4ae-305c-6f1b-80ff-f117797383f1",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "modifiedDate",
+					"state": false,
+					"businessType": "Date",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": false,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "true",
+					"DBType": "String",
+					"label": {
+						"en_US": "Status"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "3f52d0a1-5bca-ccc5-fc6f-e0ba20b9485f",
+					"indexedAsKeyword": false,
+					"system": true,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "status",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "String",
+					"label": {
+						"en_US": "Meeting Title"
+					},
+					"type": "String",
+					"required": false,
+					"externalReferenceCode": "cf6a239e-5da2-7cc8-e606-50f0cfb4c154",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "meetingTitle",
+					"state": false,
+					"businessType": "Text",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "Long",
+					"label": {
+						"en_US": "Meeting Number"
+					},
+					"type": "Long",
+					"required": false,
+					"externalReferenceCode": "2eae0e84-a071-2f72-88cf-626b7dc45603",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "meetingNumber",
+					"state": false,
+					"businessType": "LongInteger",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [
+						{
+							"name": "timeStorage",
+							"value": "useInputAsEntered"
+						}
+					],
+					"readOnly": "false",
+					"DBType": "DateTime",
+					"label": {
+						"en_US": "Meeting Date Time"
+					},
+					"type": "DateTime",
+					"required": false,
+					"externalReferenceCode": "aacbf644-a9ab-9b22-b913-35a881dfcad7",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "meetingDateTime",
+					"state": false,
+					"businessType": "DateTime",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [
+						{
+							"name": "showCounter",
+							"value": false
+						}
+					],
+					"readOnly": "false",
+					"DBType": "Clob",
+					"label": {
+						"en_US": "Meeting Location"
+					},
+					"type": "Clob",
+					"required": false,
+					"externalReferenceCode": "701c4198-f218-1244-cd09-af83d5a3c49a",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "meetingLocation",
+					"state": false,
+					"businessType": "LongText",
+					"readOnlyConditionExpression": ""
+				},
+				{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [
+						{
+							"name": "showCounter",
+							"value": false
+						}
+					],
+					"readOnly": "false",
+					"DBType": "Clob",
+					"label": {
+						"en_US": "Meeting Link"
+					},
+					"type": "Clob",
+					"required": false,
+					"externalReferenceCode": "2288e048-ebef-a2be-6db2-08dcfc9411cc",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "en_US",
+					"unique": false,
+					"name": "meetingLink",
+					"state": false,
+					"businessType": "LongText",
+					"readOnlyConditionExpression": ""
+				}
+			],
+			"restContextPath": "/o/c/meetings",
+			"scope": "site",
+			"portlet": true,
+			"modifiable": true,
+			"parameterRequired": false,
+			"enableObjectEntryHistory": false,
+			"titleObjectFieldName": "id",
+			"objectValidationRules": [],
+			"active": true,
+			"defaultLanguageId": "en_US",
+			"enableIndexSearch": true,
+			"label": {
+				"en_US": "Meeting"
+			},
+			"panelCategoryKey": "site_administration.design",
+			"pluralLabel": {
+				"en_US": "Meetings"
+			},
+			"objectLayouts": [
+				{
+					"objectLayoutTabs": [
+						{
+							"name": {
+								"en_US": "Meeting Details"
+							},
+							"objectLayoutBoxes": [
+								{
+									"objectLayoutRows": [
+										{
+											"objectLayoutColumns": [
+												{
+													"objectFieldName": "meetingTitle",
+													"size": 6,
+													"priority": 0
+												},
+												{
+													"objectFieldName": "meetingNumber",
+													"size": 6,
+													"priority": 0
+												}
+											],
+											"priority": 0
+										},
+										{
+											"objectLayoutColumns": [
+												{
+													"objectFieldName": "meetingDateTime",
+													"size": 6,
+													"priority": 0
+												},
+												{
+													"objectFieldName": "meetingLocation",
+													"size": 6,
+													"priority": 0
+												}
+											],
+											"priority": 0
+										},
+										{
+											"objectLayoutColumns": [
+												{
+													"objectFieldName": "meetingLink",
+													"size": 12,
+													"priority": 0
+												}
+											],
+											"priority": 0
+										}
+									],
+									"collapsable": false,
+									"name": {
+										"en_US": "Basic Details"
+									},
+									"priority": 0,
+									"type": "regular"
+								}
+							],
+							"priority": 0
+						},
+						{
+							"name": {
+								"en_US": "Topics"
+							},
+							"objectLayoutBoxes": [],
+							"objectRelationshipExternalReferenceCode": "bf11a577-9aca-b17e-147e-0e675579d7aa",
+							"priority": 0
+						}
+					],
+					"objectDefinitionExternalReferenceCode": "meeting-object",
+					"name": {
+						"en_US": "Meeting Layout"
+					},
+					"defaultObjectLayout": true
+				}
+			],
+			"system": false,
+			"objectViews": [],
+			"enableObjectEntryDraft": false,
+			"name": "Meeting",
+			"actions": {
+				"permissions": {},
+				"get": {},
+				"update": {},
+				"delete": {},
+				"exportObjectDefinition": {}
+			},
+			"status": {
+				"label_i18n": "Approved",
+				"code": 0,
+				"label": "approved"
+			}
+		}
+	]
+}

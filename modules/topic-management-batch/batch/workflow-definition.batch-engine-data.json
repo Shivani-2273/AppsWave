@@ -1,0 +1,209 @@
+{
+	"configuration": {
+		"className": "com.liferay.headless.admin.workflow.dto.v1_0.WorkflowDefinition",
+		"parameters": {
+			"containsHeaders": "true",
+			"createStrategy": "INSERT",
+			"importStrategy": "ON_ERROR_FAIL",
+			"updateStrategy": "UPDATE"
+		},
+		"taskItemDelegateName": "DEFAULT"
+	},
+	"items": [
+		{
+			"active": true,
+			"content": "{\"#tag-name\":\"workflow-definition\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"7f634d82-d581-8201-dba1-5a798da7ae0f\"},{\"#tag-name\":\"version\",\"#value\":\"97\"},{\"#tag-name\":\"fork\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"c7e2aa5e-254f-4e1e-bf93-b5dbc5c1a49d\"},{\"#tag-name\":\"description\",\"#value\":\"Split the workflow into multiple paths.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        629.421875,\",\"                        344\",\"                    ]\",\"                }\",\"            \"]},{\"#tag-name\":\"actions\",\"#child-nodes\":[{\"#tag-name\":\"action\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"Reviewed Action\"},{\"#tag-name\":\"description\"},{\"#tag-name\":\"script\",\"#cdata-value\":[\"com.ncema.topic.impl.workflow.TopicActionExecutor\"]},{\"#tag-name\":\"script-language\",\"#value\":\"java\"},{\"#tag-name\":\"priority\",\"#value\":\"1\"},{\"#tag-name\":\"execution-type\",\"#value\":\"onEntry\"}]}]},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Fork\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"transitions\",\"#child-nodes\":[{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Legal Feedback\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"be9288a1-2559-4762-93de-b8f2d5bbb952\"},{\"#tag-name\":\"target\",\"#value\":\"d70965a6-2356-4a5f-b63a-4c662fa6531d\"},{\"#tag-name\":\"default\",\"#value\":\"true\"}]},{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Finance Feedback\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"aae8ddeb-02c1-4fa7-bb49-d9dd7983344e\"},{\"#tag-name\":\"target\",\"#value\":\"2bbab873-338c-423e-b49c-b9dfa433edf0\"},{\"#tag-name\":\"default\",\"#value\":\"false\"}]}]}]},{\"#tag-name\":\"join\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"reviewed-join\"},{\"#tag-name\":\"description\",\"#value\":\"All interactions need to be closed.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        1489.421875,\",\"                        333\",\"                    ]\",\"                }\",\"            \"]},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Reviewed Join Actions\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"transitions\",\"#child-nodes\":[{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Approve Committee Decision\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"review-topic\"},{\"#tag-name\":\"target\",\"#value\":\"2e2e5d1d-a466-4a44-8441-af15335f63ed\"},{\"#tag-name\":\"default\",\"#value\":\"true\"}]}]}]},{\"#tag-name\":\"state\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"9ead39f3-117b-4b24-8304-383ef45c4eb1\"},{\"#tag-name\":\"description\",\"#value\":\"Begin a workflow.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        -411,\",\"                        337\",\"                    ]\",\"                }\",\"            \"]},{\"#tag-name\":\"initial\",\"#value\":\"true\"},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Start\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"transitions\",\"#child-nodes\":[{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Pending Revision\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"8ad544e1-dc84-4975-8953-667ee4a0bf08\"},{\"#tag-name\":\"target\",\"#value\":\"06be440e-1036-4820-8791-c02e693040e8\"},{\"#tag-name\":\"default\",\"#value\":\"true\"}]}]}]},{\"#tag-name\":\"state\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"f55b04f9-8f1e-41c6-af47-0a532758fbfe\"},{\"#tag-name\":\"description\",\"#value\":\"Conclude the workflow.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        126.9301491031566,\",\"                        544.9999750808312\",\"                    ],\",\"                    \\\"terminal\\\": true\",\"                }\",\"            \"]},{\"#tag-name\":\"actions\",\"#child-nodes\":[{\"#tag-name\":\"action\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"DeleteTopic\"},{\"#tag-name\":\"description\"},{\"#tag-name\":\"script\",\"#cdata-value\":[\"com.ncema.topic.impl.workflow.TopicActionExecutor\"]},{\"#tag-name\":\"script-language\",\"#value\":\"java\"},{\"#tag-name\":\"priority\",\"#value\":\"1\"},{\"#tag-name\":\"execution-type\",\"#value\":\"onEntry\"}]}]},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Delete Topic\",\"language-id\":\"en_US\"}]}]},{\"#tag-name\":\"state\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"ba6238a2-2f9f-4475-992a-8703628d1153\"},{\"#tag-name\":\"description\",\"#value\":\"Conclude the workflow.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        2521.421875,\",\"                        338\",\"                    ],\",\"                    \\\"terminal\\\": true\",\"                }\",\"            \"]},{\"#tag-name\":\"actions\",\"#child-nodes\":[{\"#tag-name\":\"action\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"Reject Topic\"},{\"#tag-name\":\"description\"},{\"#tag-name\":\"script\",\"#cdata-value\":[\"com.ncema.topic.impl.workflow.TopicActionExecutor\"]},{\"#tag-name\":\"script-language\",\"#value\":\"java\"},{\"#tag-name\":\"priority\",\"#value\":\"1\"},{\"#tag-name\":\"execution-type\",\"#value\":\"onEntry\"}]}]},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Reject Committee Member\",\"language-id\":\"en_US\"}]}]},{\"#tag-name\":\"state\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"37cfc0e7-d83d-46ef-a3ac-b132786d6fe9\"},{\"#tag-name\":\"description\",\"#value\":\"Conclude the workflow.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        3052.421875,\",\"                        289\",\"                    ],\",\"                    \\\"terminal\\\": true\",\"                }\",\"            \"]},{\"#tag-name\":\"actions\",\"#child-nodes\":[{\"#tag-name\":\"action\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"Approve Action\"},{\"#tag-name\":\"description\"},{\"#tag-name\":\"script\",\"#cdata-value\":[\"com.ncema.topic.impl.workflow.TopicActionExecutor\"]},{\"#tag-name\":\"script-language\",\"#value\":\"java\"},{\"#tag-name\":\"priority\",\"#value\":\"1\"},{\"#tag-name\":\"execution-type\",\"#value\":\"onEntry\"}]}]},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"End\",\"language-id\":\"en_US\"}]}]},{\"#tag-name\":\"state\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"dba5c16d-6b99-47cb-8a41-04118c070e52\"},{\"#tag-name\":\"description\",\"#value\":\"Conclude the workflow.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        3275.421875,\",\"                        561\",\"                    ],\",\"                    \\\"terminal\\\": true\",\"                }\",\"            \"]},{\"#tag-name\":\"actions\",\"#child-nodes\":[{\"#tag-name\":\"action\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"Reject Topic\"},{\"#tag-name\":\"description\"},{\"#tag-name\":\"script\",\"#cdata-value\":[\"com.ncema.topic.impl.workflow.TopicActionExecutor\"]},{\"#tag-name\":\"script-language\",\"#value\":\"java\"},{\"#tag-name\":\"priority\",\"#value\":\"1\"},{\"#tag-name\":\"execution-type\",\"#value\":\"onEntry\"}]}]},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"End\",\"language-id\":\"en_US\"}]}]},{\"#tag-name\":\"task\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"06be440e-1036-4820-8791-c02e693040e8\"},{\"#tag-name\":\"description\",\"#value\":\"Ask a user to work on the item.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        126.421875,\",\"                        337\",\"                    ]\",\"                }\",\"            \"]},{\"#tag-name\":\"assignments\",\"#child-nodes\":[{\"#tag-name\":\"user\"}]},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Pending Revision\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"transitions\",\"#child-nodes\":[{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Delete Topic\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"delete-topic\"},{\"#tag-name\":\"target\",\"#value\":\"f55b04f9-8f1e-41c6-af47-0a532758fbfe\"},{\"#tag-name\":\"default\",\"#value\":\"false\"}]},{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Submit to Revision\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"submit-to-revision\"},{\"#tag-name\":\"target\",\"#value\":\"c7e2aa5e-254f-4e1e-bf93-b5dbc5c1a49d\"},{\"#tag-name\":\"default\",\"#value\":\"true\"}]}]}]},{\"#tag-name\":\"task\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"d70965a6-2356-4a5f-b63a-4c662fa6531d\"},{\"#tag-name\":\"description\",\"#value\":\"Ask a user to work on the item.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        1070.421875,\",\"                        173\",\"                    ]\",\"                }\",\"            \"]},{\"#tag-name\":\"actions\",\"#child-nodes\":[{\"#tag-name\":\"notification\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"Legal Department Notification\"},{\"#tag-name\":\"description\"},{\"#tag-name\":\"template\",\"#cdata-value\":[\"${entryType} requires legal department review.\"]},{\"#tag-name\":\"template-language\",\"#value\":\"freemarker\"},{\"#tag-name\":\"notification-type\",\"#value\":\"user-notification\"},{\"#tag-name\":\"recipients\",\"#child-nodes\":[{\"#tag-name\":\"roles\",\"#child-nodes\":[{\"#tag-name\":\"role\",\"#child-nodes\":[{\"#tag-name\":\"role-type\",\"#value\":\"regular\"},{\"#tag-name\":\"name\",\"#value\":\"Legal Department\"},{\"#tag-name\":\"auto-create\",\"#value\":\"false\"}]}]}],\"receptionType\":\"to\"},{\"#tag-name\":\"execution-type\",\"#value\":\"onAssignment\"}]}]},{\"#tag-name\":\"assignments\",\"#child-nodes\":[{\"#tag-name\":\"roles\",\"#child-nodes\":[{\"#tag-name\":\"role\",\"#child-nodes\":[{\"#tag-name\":\"role-type\",\"#value\":\"regular\"},{\"#tag-name\":\"name\",\"#value\":\"Legal Department\"},{\"#tag-name\":\"auto-create\",\"#value\":\"false\"}]}]}]},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Legal Feedback\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"transitions\",\"#child-nodes\":[{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Update Legal Feedback\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"565adc2f-8d59-4ad3-8ee1-dc2479862241\"},{\"#tag-name\":\"target\",\"#value\":\"reviewed-join\"},{\"#tag-name\":\"default\",\"#value\":\"true\"}]}]}]},{\"#tag-name\":\"task\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"2bbab873-338c-423e-b49c-b9dfa433edf0\"},{\"#tag-name\":\"description\",\"#value\":\"Ask a user to work on the item.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        1071.421875,\",\"                        475\",\"                    ]\",\"                }\",\"            \"]},{\"#tag-name\":\"actions\",\"#child-nodes\":[{\"#tag-name\":\"notification\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"Financial Department Notification\"},{\"#tag-name\":\"description\"},{\"#tag-name\":\"template\",\"#cdata-value\":[\"${entryType} requires financial department review.\"]},{\"#tag-name\":\"template-language\",\"#value\":\"freemarker\"},{\"#tag-name\":\"notification-type\",\"#value\":\"user-notification\"},{\"#tag-name\":\"recipients\",\"#child-nodes\":[{\"#tag-name\":\"roles\",\"#child-nodes\":[{\"#tag-name\":\"role\",\"#child-nodes\":[{\"#tag-name\":\"role-type\",\"#value\":\"regular\"},{\"#tag-name\":\"name\",\"#value\":\"Financial Department\"},{\"#tag-name\":\"auto-create\",\"#value\":\"false\"}]}]}],\"receptionType\":\"to\"},{\"#tag-name\":\"execution-type\",\"#value\":\"onAssignment\"}]}]},{\"#tag-name\":\"assignments\",\"#child-nodes\":[{\"#tag-name\":\"roles\",\"#child-nodes\":[{\"#tag-name\":\"role\",\"#child-nodes\":[{\"#tag-name\":\"role-type\",\"#value\":\"regular\"},{\"#tag-name\":\"name\",\"#value\":\"Financial Department\"},{\"#tag-name\":\"auto-create\",\"#value\":\"false\"}]}]}]},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Financial Feedback\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"transitions\",\"#child-nodes\":[{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Update Finance Feedback\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"9ce514cd-b209-4859-a63a-6e9b72678abe\"},{\"#tag-name\":\"target\",\"#value\":\"reviewed-join\"},{\"#tag-name\":\"default\",\"#value\":\"true\"}]}]}]},{\"#tag-name\":\"task\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"2e2e5d1d-a466-4a44-8441-af15335f63ed\"},{\"#tag-name\":\"description\",\"#value\":\"Ask a user to work on the item.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        2010.421875,\",\"                        336\",\"                    ]\",\"                }\",\"            \"]},{\"#tag-name\":\"actions\",\"#child-nodes\":[{\"#tag-name\":\"notification\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"Committee Notification\"},{\"#tag-name\":\"description\"},{\"#tag-name\":\"template\",\"#cdata-value\":[\"${entryType} requires committee review.\"]},{\"#tag-name\":\"template-language\",\"#value\":\"freemarker\"},{\"#tag-name\":\"notification-type\",\"#value\":\"user-notification\"},{\"#tag-name\":\"recipients\",\"#child-nodes\":[{\"#tag-name\":\"roles\",\"#child-nodes\":[{\"#tag-name\":\"role\",\"#child-nodes\":[{\"#tag-name\":\"role-type\",\"#value\":\"regular\"},{\"#tag-name\":\"name\",\"#value\":\"Committee Member\"},{\"#tag-name\":\"auto-create\",\"#value\":\"false\"}]}]}],\"receptionType\":\"to\"},{\"#tag-name\":\"execution-type\",\"#value\":\"onEntry\"}]}]},{\"#tag-name\":\"assignments\",\"#child-nodes\":[{\"#tag-name\":\"roles\",\"#child-nodes\":[{\"#tag-name\":\"role\",\"#child-nodes\":[{\"#tag-name\":\"role-type\",\"#value\":\"regular\"},{\"#tag-name\":\"name\",\"#value\":\"Committee Member\"},{\"#tag-name\":\"auto-create\",\"#value\":\"false\"}]}]}]},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Committee Decision\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"transitions\",\"#child-nodes\":[{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Re-Topic\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"9e12054a-ecee-48ed-8b11-5fcf849cb038\"},{\"#tag-name\":\"target\",\"#value\":\"c9fd8be3-4ea9-4277-b459-3e45d7bc7008\"},{\"#tag-name\":\"default\",\"#value\":\"false\"}]},{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Reject Committee Member\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"reject-committee\"},{\"#tag-name\":\"target\",\"#value\":\"ba6238a2-2f9f-4475-992a-8703628d1153\"},{\"#tag-name\":\"default\",\"#value\":\"true\"}]},{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Approve\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"commitee-approved\"},{\"#tag-name\":\"target\",\"#value\":\"a81f757c-46fd-42a5-9f71-c93fbd1f5867\"},{\"#tag-name\":\"default\",\"#value\":\"false\"}]}]}]},{\"#tag-name\":\"task\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"c9fd8be3-4ea9-4277-b459-3e45d7bc7008\"},{\"#tag-name\":\"description\",\"#value\":\"Ask a user to work on the item.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        2006.421875,\",\"                        585\",\"                    ]\",\"                }\",\"            \"]},{\"#tag-name\":\"assignments\",\"#child-nodes\":[{\"#tag-name\":\"user\"}]},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Re-Topic\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"transitions\",\"#child-nodes\":[{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Re-Topic\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"13d4fc87-406a-4a98-907d-a9ad3632e18d\"},{\"#tag-name\":\"target\",\"#value\":\"2e2e5d1d-a466-4a44-8441-af15335f63ed\"},{\"#tag-name\":\"default\",\"#value\":\"true\"}]}]}]},{\"#tag-name\":\"task\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"a81f757c-46fd-42a5-9f71-c93fbd1f5867\"},{\"#tag-name\":\"description\",\"#value\":\"Ask a user to work on the item.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        2271.7011994904,\",\"                        101.86031008611457\",\"                    ]\",\"                }\",\"            \"]},{\"#tag-name\":\"actions\",\"#child-nodes\":[{\"#tag-name\":\"notification\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"General Manager Notification\"},{\"#tag-name\":\"description\"},{\"#tag-name\":\"template\",\"#cdata-value\":[\"${entryType} requires general manager review.\"]},{\"#tag-name\":\"template-language\",\"#value\":\"freemarker\"},{\"#tag-name\":\"notification-type\",\"#value\":\"user-notification\"},{\"#tag-name\":\"recipients\",\"#child-nodes\":[{\"#tag-name\":\"roles\",\"#child-nodes\":[{\"#tag-name\":\"role\",\"#child-nodes\":[{\"#tag-name\":\"role-type\",\"#value\":\"regular\"},{\"#tag-name\":\"name\",\"#value\":\"General Manager\"},{\"#tag-name\":\"auto-create\",\"#value\":\"false\"}]}]}],\"receptionType\":\"to\"},{\"#tag-name\":\"execution-type\",\"#value\":\"onEntry\"}]}]},{\"#tag-name\":\"assignments\",\"#child-nodes\":[{\"#tag-name\":\"roles\",\"#child-nodes\":[{\"#tag-name\":\"role\",\"#child-nodes\":[{\"#tag-name\":\"role-type\",\"#value\":\"regular\"},{\"#tag-name\":\"name\",\"#value\":\"General Manager\"},{\"#tag-name\":\"auto-create\",\"#value\":\"false\"}]}]}]},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"General Manager\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"transitions\",\"#child-nodes\":[{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Approve\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"0cfb5ec4-041b-4b2b-b3b1-4ef5cf81fcd7\"},{\"#tag-name\":\"target\",\"#value\":\"ac55da1c-3856-44de-a9ce-804f62689e49\"},{\"#tag-name\":\"default\",\"#value\":\"true\"}]}]}]},{\"#tag-name\":\"task\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"ac55da1c-3856-44de-a9ce-804f62689e49\"},{\"#tag-name\":\"description\",\"#value\":\"Ask a user to work on the item.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        2700.421875,\",\"                        107\",\"                    ]\",\"                }\",\"            \"]},{\"#tag-name\":\"actions\",\"#child-nodes\":[{\"#tag-name\":\"notification\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"Vice President Notification\"},{\"#tag-name\":\"description\"},{\"#tag-name\":\"template\",\"#cdata-value\":[\"${entryType} requires vice president review.\"]},{\"#tag-name\":\"template-language\",\"#value\":\"freemarker\"},{\"#tag-name\":\"notification-type\",\"#value\":\"user-notification\"},{\"#tag-name\":\"recipients\",\"#child-nodes\":[{\"#tag-name\":\"roles\",\"#child-nodes\":[{\"#tag-name\":\"role\",\"#child-nodes\":[{\"#tag-name\":\"role-type\",\"#value\":\"regular\"},{\"#tag-name\":\"name\",\"#value\":\"Vice president\"},{\"#tag-name\":\"auto-create\",\"#value\":\"false\"}]}]}],\"receptionType\":\"to\"},{\"#tag-name\":\"execution-type\",\"#value\":\"onEntry\"}]}]},{\"#tag-name\":\"assignments\",\"#child-nodes\":[{\"#tag-name\":\"roles\",\"#child-nodes\":[{\"#tag-name\":\"role\",\"#child-nodes\":[{\"#tag-name\":\"role-type\",\"#value\":\"regular\"},{\"#tag-name\":\"name\",\"#value\":\"Vice president\"},{\"#tag-name\":\"auto-create\",\"#value\":\"false\"}]}]}]},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Vice President\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"transitions\",\"#child-nodes\":[{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Approve\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"bdd2f277-8bc8-42ba-8cd6-65a2ce5076f4\"},{\"#tag-name\":\"target\",\"#value\":\"a2b934af-64cf-427b-9723-775c554bfc2c\"},{\"#tag-name\":\"default\",\"#value\":\"true\"}]}]}]},{\"#tag-name\":\"task\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"a2b934af-64cf-427b-9723-775c554bfc2c\"},{\"#tag-name\":\"description\",\"#value\":\"Ask a user to work on the item.\"},{\"#tag-name\":\"metadata\",\"#cdata-value\":[\"\",\"                {\",\"                    \\\"xy\\\": [\",\"                        2793.421875,\",\"                        572\",\"                    ]\",\"                }\",\"            \"]},{\"#tag-name\":\"actions\",\"#child-nodes\":[{\"#tag-name\":\"notification\",\"#child-nodes\":[{\"#tag-name\":\"name\",\"#value\":\"Chairman Notification\"},{\"#tag-name\":\"description\"},{\"#tag-name\":\"template\",\"#cdata-value\":[\"${entryType} requires chairman review.\"]},{\"#tag-name\":\"template-language\",\"#value\":\"freemarker\"},{\"#tag-name\":\"notification-type\",\"#value\":\"user-notification\"},{\"#tag-name\":\"recipients\",\"#child-nodes\":[{\"#tag-name\":\"roles\",\"#child-nodes\":[{\"#tag-name\":\"role\",\"#child-nodes\":[{\"#tag-name\":\"role-type\",\"#value\":\"regular\"},{\"#tag-name\":\"name\",\"#value\":\"Chairman\"},{\"#tag-name\":\"auto-create\",\"#value\":\"false\"}]}]}],\"receptionType\":\"to\"},{\"#tag-name\":\"execution-type\",\"#value\":\"onEntry\"}]}]},{\"#tag-name\":\"assignments\",\"#child-nodes\":[{\"#tag-name\":\"roles\",\"#child-nodes\":[{\"#tag-name\":\"role\",\"#child-nodes\":[{\"#tag-name\":\"role-type\",\"#value\":\"regular\"},{\"#tag-name\":\"name\",\"#value\":\"Chairman\"},{\"#tag-name\":\"auto-create\",\"#value\":\"false\"}]}]}]},{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Chairman\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"transitions\",\"#child-nodes\":[{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Change Topic\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"6ffb0a4f-f989-4a13-934f-8e880ff1eb2b\"},{\"#tag-name\":\"target\",\"#value\":\"c9fd8be3-4ea9-4277-b459-3e45d7bc7008\"},{\"#tag-name\":\"default\",\"#value\":\"false\"}]},{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Approve\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"approve-topic\"},{\"#tag-name\":\"target\",\"#value\":\"37cfc0e7-d83d-46ef-a3ac-b132786d6fe9\"},{\"#tag-name\":\"default\",\"#value\":\"true\"}]},{\"#tag-name\":\"transition\",\"#child-nodes\":[{\"#tag-name\":\"labels\",\"#child-nodes\":[{\"#tag-name\":\"label\",\"#value\":\"Reject\",\"language-id\":\"en_US\"}]},{\"#tag-name\":\"name\",\"#value\":\"reject-topic\"},{\"#tag-name\":\"target\",\"#value\":\"dba5c16d-6b99-47cb-8a41-04118c070e52\"},{\"#tag-name\":\"default\",\"#value\":\"false\"}]}]}]}],\"xmlns\":\"urn:liferay.com:liferay-workflow_7.4.0\",\"xsi:schemaLocation\":\"urn:liferay.com:liferay-workflow_7.4.0 http://www.liferay.com/dtd/liferay-workflow-definition_7_4_0.xsd\",\"xmlns:xsi\":\"http://www.w3.org/2001/XMLSchema-instance\"}",
+			"dateCreated": "2024-12-19T12:41:29Z",
+			"dateModified": "2024-12-30T02:23:11Z",
+			"description": "",
+			"id": 43778,
+			"name": "7f634d82-d581-8201-dba1-5a798da7ae0f",
+			"nodes": [
+				{
+					"label": "\n\t\t\t\tReject Committee Member\n\t\t\t",
+					"name": "ba6238a2-2f9f-4475-992a-8703628d1153",
+					"type": "TERMINAL_STATE"
+				},
+				{
+					"label": "\n\t\t\t\tEnd\n\t\t\t",
+					"name": "dba5c16d-6b99-47cb-8a41-04118c070e52",
+					"type": "TERMINAL_STATE"
+				},
+				{
+					"label": "\n\t\t\t\tGeneral Manager\n\t\t\t",
+					"name": "a81f757c-46fd-42a5-9f71-c93fbd1f5867",
+					"type": "TASK"
+				},
+				{
+					"label": "\n\t\t\t\tEnd\n\t\t\t",
+					"name": "37cfc0e7-d83d-46ef-a3ac-b132786d6fe9",
+					"type": "TERMINAL_STATE"
+				},
+				{
+					"label": "\n\t\t\t\tVice President\n\t\t\t",
+					"name": "ac55da1c-3856-44de-a9ce-804f62689e49",
+					"type": "TASK"
+				},
+				{
+					"label": "\n\t\t\t\tReviewed Join Actions\n\t\t\t",
+					"name": "reviewed-join",
+					"type": "JOIN"
+				},
+				{
+					"label": "\n\t\t\t\tPending Revision\n\t\t\t",
+					"name": "06be440e-1036-4820-8791-c02e693040e8",
+					"type": "TASK"
+				},
+				{
+					"label": "\n\t\t\t\tRe-Topic\n\t\t\t",
+					"name": "c9fd8be3-4ea9-4277-b459-3e45d7bc7008",
+					"type": "TASK"
+				},
+				{
+					"label": "\n\t\t\t\tCommittee Decision\n\t\t\t",
+					"name": "2e2e5d1d-a466-4a44-8441-af15335f63ed",
+					"type": "TASK"
+				},
+				{
+					"label": "\n\t\t\t\tFork\n\t\t\t",
+					"name": "c7e2aa5e-254f-4e1e-bf93-b5dbc5c1a49d",
+					"type": "FORK"
+				},
+				{
+					"label": "\n\t\t\t\tFinancial Feedback\n\t\t\t",
+					"name": "2bbab873-338c-423e-b49c-b9dfa433edf0",
+					"type": "TASK"
+				},
+				{
+					"label": "\n\t\t\t\tLegal Feedback\n\t\t\t",
+					"name": "d70965a6-2356-4a5f-b63a-4c662fa6531d",
+					"type": "TASK"
+				},
+				{
+					"label": "\n\t\t\t\tDelete Topic\n\t\t\t",
+					"name": "f55b04f9-8f1e-41c6-af47-0a532758fbfe",
+					"type": "TERMINAL_STATE"
+				},
+				{
+					"label": "\n\t\t\t\tStart\n\t\t\t",
+					"name": "9ead39f3-117b-4b24-8304-383ef45c4eb1",
+					"type": "INITIAL_STATE"
+				},
+				{
+					"label": "\n\t\t\t\tChairman\n\t\t\t",
+					"name": "a2b934af-64cf-427b-9723-775c554bfc2c",
+					"type": "TASK"
+				}
+			],
+			"title": "Topic Workflow",
+			"title_i18n": {
+				"en_US": "Topic Workflow"
+			},
+			"transitions": [
+				{
+					"label": "\n\t\t\t\t\t\tApprove\n\t\t\t\t\t",
+					"name": "0cfb5ec4-041b-4b2b-b3b1-4ef5cf81fcd7",
+					"sourceNodeName": "a81f757c-46fd-42a5-9f71-c93fbd1f5867",
+					"targetNodeName": "ac55da1c-3856-44de-a9ce-804f62689e49"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tApprove\n\t\t\t\t\t",
+					"name": "bdd2f277-8bc8-42ba-8cd6-65a2ce5076f4",
+					"sourceNodeName": "ac55da1c-3856-44de-a9ce-804f62689e49",
+					"targetNodeName": "a2b934af-64cf-427b-9723-775c554bfc2c"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tApprove Committee Decision\n\t\t\t\t\t",
+					"name": "review-topic",
+					"sourceNodeName": "reviewed-join",
+					"targetNodeName": "2e2e5d1d-a466-4a44-8441-af15335f63ed"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tDelete Topic\n\t\t\t\t\t",
+					"name": "delete-topic",
+					"sourceNodeName": "06be440e-1036-4820-8791-c02e693040e8",
+					"targetNodeName": "f55b04f9-8f1e-41c6-af47-0a532758fbfe"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tSubmit to Revision\n\t\t\t\t\t",
+					"name": "submit-to-revision",
+					"sourceNodeName": "06be440e-1036-4820-8791-c02e693040e8",
+					"targetNodeName": "c7e2aa5e-254f-4e1e-bf93-b5dbc5c1a49d"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tRe-Topic\n\t\t\t\t\t",
+					"name": "13d4fc87-406a-4a98-907d-a9ad3632e18d",
+					"sourceNodeName": "c9fd8be3-4ea9-4277-b459-3e45d7bc7008",
+					"targetNodeName": "2e2e5d1d-a466-4a44-8441-af15335f63ed"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tRe-Topic\n\t\t\t\t\t",
+					"name": "9e12054a-ecee-48ed-8b11-5fcf849cb038",
+					"sourceNodeName": "2e2e5d1d-a466-4a44-8441-af15335f63ed",
+					"targetNodeName": "c9fd8be3-4ea9-4277-b459-3e45d7bc7008"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tReject Committee Member\n\t\t\t\t\t",
+					"name": "reject-committee",
+					"sourceNodeName": "2e2e5d1d-a466-4a44-8441-af15335f63ed",
+					"targetNodeName": "ba6238a2-2f9f-4475-992a-8703628d1153"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tApprove\n\t\t\t\t\t",
+					"name": "commitee-approved",
+					"sourceNodeName": "2e2e5d1d-a466-4a44-8441-af15335f63ed",
+					"targetNodeName": "a81f757c-46fd-42a5-9f71-c93fbd1f5867"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tLegal Feedback\n\t\t\t\t\t",
+					"name": "be9288a1-2559-4762-93de-b8f2d5bbb952",
+					"sourceNodeName": "c7e2aa5e-254f-4e1e-bf93-b5dbc5c1a49d",
+					"targetNodeName": "d70965a6-2356-4a5f-b63a-4c662fa6531d"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tFinance Feedback\n\t\t\t\t\t",
+					"name": "aae8ddeb-02c1-4fa7-bb49-d9dd7983344e",
+					"sourceNodeName": "c7e2aa5e-254f-4e1e-bf93-b5dbc5c1a49d",
+					"targetNodeName": "2bbab873-338c-423e-b49c-b9dfa433edf0"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tUpdate Finance Feedback\n\t\t\t\t\t",
+					"name": "9ce514cd-b209-4859-a63a-6e9b72678abe",
+					"sourceNodeName": "2bbab873-338c-423e-b49c-b9dfa433edf0",
+					"targetNodeName": "reviewed-join"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tUpdate Legal Feedback\n\t\t\t\t\t",
+					"name": "565adc2f-8d59-4ad3-8ee1-dc2479862241",
+					"sourceNodeName": "d70965a6-2356-4a5f-b63a-4c662fa6531d",
+					"targetNodeName": "reviewed-join"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tPending Revision\n\t\t\t\t\t",
+					"name": "8ad544e1-dc84-4975-8953-667ee4a0bf08",
+					"sourceNodeName": "9ead39f3-117b-4b24-8304-383ef45c4eb1",
+					"targetNodeName": "06be440e-1036-4820-8791-c02e693040e8"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tChange Topic\n\t\t\t\t\t",
+					"name": "6ffb0a4f-f989-4a13-934f-8e880ff1eb2b",
+					"sourceNodeName": "a2b934af-64cf-427b-9723-775c554bfc2c",
+					"targetNodeName": "c9fd8be3-4ea9-4277-b459-3e45d7bc7008"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tApprove\n\t\t\t\t\t",
+					"name": "approve-topic",
+					"sourceNodeName": "a2b934af-64cf-427b-9723-775c554bfc2c",
+					"targetNodeName": "37cfc0e7-d83d-46ef-a3ac-b132786d6fe9"
+				},
+				{
+					"label": "\n\t\t\t\t\t\tReject\n\t\t\t\t\t",
+					"name": "reject-topic",
+					"sourceNodeName": "a2b934af-64cf-427b-9723-775c554bfc2c",
+					"targetNodeName": "dba5c16d-6b99-47cb-8a41-04118c070e52"
+				}
+			],
+			"version": "1"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+assemble:
+    - from: batch
+      into: batch
+topic-management-batch:
+    name: Topic Management Batch
+    oAuthApplicationHeadlessServer: topic-management-batch-oauth-application-headless-server
+    type: batch
+topic-management-batch-oauth-application-headless-server:
+    .serviceAddress: localhost:8080
+    .serviceScheme: http
+    name: Topic Management OAuth Application Headless Server
+    scopes:
+        - Liferay.Headless.Admin.Workflow.everything
+        - Liferay.Headless.Batch.Engine.everything
+        - Liferay.Object.Admin.REST.everything
+    type: oAuthApplicationHeadlessServer

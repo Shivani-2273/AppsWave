@@ -1,0 +1,12 @@
+Bundle-Name: topic-management-service
+Bundle-SymbolicName: topic.management.service
+Bundle-Version: 1.0.0
+Export-Package:\
+    topic.management.service,\
+    topic.management.service.impl,\
+    topic.management.helper,\
+    topic.management.constants
+
+Import-Package:\
+    com.liferay.*,\
+    *

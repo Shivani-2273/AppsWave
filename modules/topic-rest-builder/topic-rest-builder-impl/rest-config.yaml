@@ -1,0 +1,9 @@
+apiDir: "../topic-rest-builder-api/src/main/java"
+apiPackagePath: "com.ncema"
+application:
+    baseURI: "/topic-rest-builder"
+    className: "TopicRestBuilderApplication"
+    name: "TopicRestBuilder"
+author: "root316"
+clientDir: "../topic-rest-builder-client/src/main/java"
+testDir: "../topic-rest-builder-test/src/testIntegration/java"

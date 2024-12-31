@@ -1,0 +1,5 @@
+dependencies {
+	compileOnly project(":modules:topic-management-service")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+}
