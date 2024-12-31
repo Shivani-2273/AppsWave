@@ -1,0 +1,692 @@
+{
+	"info": {
+		"_postman_id": "ebe1d168-cc14-48a6-9a72-ee2f54007984",
+		"name": "AppsWave",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21186473"
+	},
+	"item": [
+		{
+			"name": "Topic",
+			"item": [
+				{
+					"name": "Get All Topics",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "t",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "test@liferay.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/o/topic-rest-builder/v1.0/topics?search=&sort=id:asc&page=1&pageSize=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-rest-builder",
+								"v1.0",
+								"topics"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": ""
+								},
+								{
+									"key": "sort",
+									"value": "id:asc"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Topic",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "t",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "test@liferay.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/o/topic-rest-builder/v1.0/topics/56750",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-rest-builder",
+								"v1.0",
+								"topics",
+								"56750"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Topic",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "t",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "test@liferay.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/o/topic-rest-builder/v1.0/topics/56677",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-rest-builder",
+								"v1.0",
+								"topics",
+								"56677"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Topic",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "t",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "test@liferay.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dGVzdEBsaWZlcmF5LmNvbTp0ZXN0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"topicTitle\": \"OtherTopic\",\n    \"topicSubtitle\": \"third Subtitle\",\n    \"topicDescription\": \"Test Description\",\n    \"topicAttachments\": [\n        {\n            \"fileName\": \"test123.pdf\",\n            \"fileBase64\": \"JVBERi0xLjcKCjEgMCBvY...\", \n            \"mimeType\": \"application/pdf\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/o/topic-rest-builder/v1.0/topics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-rest-builder",
+								"v1.0",
+								"topics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Topic",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "t",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "test@liferay.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dGVzdEBsaWZlcmF5LmNvbTp0ZXN0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"topicTitle\": \"OtherTopic\",\n    \"topicSubtitle\": \"Updated Topic subutitle\",\n    \"topicDescription\": \"Updated Topic Description\",\n     \"topicAttachments\": [\n        {\n            \"attachmentId\": 54932\n        },\n        {\n            \"attachmentId\": 54936\n\n        },\n        {\n            \"fileName\": \"test456.pdf\",\n            \"fileBase64\": \"JVBERi0xLjcKCjEgMCBvY...\",\n            \"mimeType\": \"application/pdf\"\n\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/o/topic-rest-builder/v1.0/topics/56771",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-rest-builder",
+								"v1.0",
+								"topics",
+								"56771"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Topics By Status",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "t",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "test@liferay.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/o/topic-rest-builder/v1.0/topics/PendingRevision/status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-rest-builder",
+								"v1.0",
+								"topics",
+								"PendingRevision",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Get Topic Logs",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic test@liferay.com:test"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/o/topic-management/v1.0/topics/56677/workflow-logs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-management",
+								"v1.0",
+								"topics",
+								"56677",
+								"workflow-logs"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Meeting",
+			"item": [
+				{
+					"name": "Create Meeting",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "t",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "test@liferay.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic test@liferay.com:test"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"meetingTitle\": \"Scrum Review Meeting\",\n    \"meetingNumber\": 7879897,\n    \"meetingDateTime\": \"2024-12-25T10:00:00Z\",\n    \"meetingLocation\": \"Conference Room A\",\n    \"meetingLink\": \"https://meet.example.com/123\",\n    \"participants\": [20123],\n    \"topics\":[56750]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/o/topic-rest-builder/v1.0/meetings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-rest-builder",
+								"v1.0",
+								"meetings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Meetings",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "t",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "test@liferay.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dGVzdEBsaWZlcmF5LmNvbTp0ZXN0"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/o/topic-rest-builder/v1.0/meetings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-rest-builder",
+								"v1.0",
+								"meetings"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Meeting",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "t",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "test@liferay.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dGVzdEBsaWZlcmF5LmNvbTp0ZXN0"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/o/topic-rest-builder/v1.0/meetings/56742",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-rest-builder",
+								"v1.0",
+								"meetings",
+								"56742"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Meeting",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "t",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "test@liferay.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dGVzdEBsaWZlcmF5LmNvbTp0ZXN0"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/o/topic-rest-builder/v1.0/meetings/51881",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-rest-builder",
+								"v1.0",
+								"meetings",
+								"51881"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Meeting Participants",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "t",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "test@liferay.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Basic dGVzdEBsaWZlcmF5LmNvbTp0ZXN0"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/o/topic-rest-builder/v1.0/meetings/56742/participants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-rest-builder",
+								"v1.0",
+								"meetings",
+								"56742",
+								"participants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Meeting",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "t",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "test@liferay.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Basic dGVzdEBsaWZlcmF5LmNvbTp0ZXN0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"meetingTitle\": \"Updated Project Review Meeting\",\n    \"meetingNumber\": 88888,\n    \"meetingDateTime\": \"2024-12-25T11:00:00Z\",\n    \"meetingLocation\": \"Conference Room C\",\n    \"meetingLink\": \"https://meet.example.com/123-updated\",\n    \"participants\": [20123, 35908, 35887],\n    \"topics\": [56677]\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/o/topic-rest-builder/v1.0/meetings/56692",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-rest-builder",
+								"v1.0",
+								"meetings",
+								"56692"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Attachment",
+			"item": [
+				{
+					"name": "Delete Attachment",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "t",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "test@liferay.com",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/o/topic-rest-builder/v1.0/attachments/56650",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-rest-builder",
+								"v1.0",
+								"attachments",
+								"56650"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Attachment",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"fileName\": \"updated_file.pdf\",\n    \"fileBase64\": \"JVBERi0xLjcKCjEgMCBvY...\",\n    \"mimeType\": \"application/pdf\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:8080/o/topic-rest-builder/v1.0/attachments/54893",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"o",
+								"topic-rest-builder",
+								"v1.0",
+								"attachments",
+								"54893"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
